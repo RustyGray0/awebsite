@@ -1,0 +1,125 @@
+body {
+    height: 100%;
+    position: relative;
+    scroll-behavior: smooth;
+    background-color: #595959;
+    background-image:
+    linear-gradient(rgba(255,255,255,.5) 2px, transparent 2px),
+    linear-gradient(90deg, rgba(255,255,255,.5) 2px, transparent 2px),
+    linear-gradient(rgba(255,255,255,.28) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.28) 1px, transparent 1px);
+    background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
+    background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
+    margin: 0;
+    font-family: 'Roboto Slab';
+    color: #cecece;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    background-color: #00203f;/*#3b3b3b*/
+    padding: .01%;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+#nav {
+    text-align: center;
+}
+
+#nav li {
+    list-style: none;
+    display: inline;
+    margin-left: 1%;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    color: #cecece;
+}
+
+.nav-link:hover {
+    color: #00688b;
+}
+
+#main-box {
+    background: linear-gradient(180deg, rgba(0,32,63,0.8) 0%, rgba(0,32,63,0.65) 35%, rgba(0,32,63,0.8) 100%);
+    border-style: solid;
+    padding: 5px;
+    position: fixed;
+    margin-top: 4%;
+    margin-left: 1%;
+}
+
+#name {
+    display: block;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#tag {
+    display: block;
+    font-size: 20px;
+}
+
+#about {
+    position: absolute;
+    margin-left: 60%;
+    margin-right: 15%;
+    margin-top: 8%;
+    background: linear-gradient(180deg, rgba(0,32,63,0.8) 0%, rgba(0,32,63,0.65) 35%, rgba(0,32,63,0.8) 100%);
+    border-style: solid;
+    padding: 5px;
+    width: 20%;
+}
+
+#about-title {
+    display: block;
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 10px;
+    border-bottom: solid;
+}
+
+#about-text {
+    display: block;
+    font-size: 20px;
+}
+
+#contact {
+    position: absolute;
+    margin-left: 45%;
+    margin-top: 60%;
+    background: linear-gradient(180deg, rgba(0,32,63,0.8) 0%, rgba(0,32,63,0.65) 35%, rgba(0,32,63,0.8) 100%);
+    border-style: solid;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#contact-title {
+    display: block;
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 10px;
+    border-bottom: solid;
+}
+
+#contact-email {
+    display: block;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    color: #00688b;
+}
+
+.social {
+    text-decoration: none;
+    color: #cecece;
+}
+
+.social:hover {
+    color: #00688b;
+}
