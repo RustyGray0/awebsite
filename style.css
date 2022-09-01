@@ -24,15 +24,20 @@ body {
 }
 
 #container {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 2%;
     background: linear-gradient(21deg, #595959, #aeaeae, #7f7f7f);
     background-size: 600% 600%;
-    -webkit-animation: AnimationName 15s ease infinite;
-    -moz-animation: AnimationName 15s ease infinite;
-    animation: AnimationName 15s ease infinite;
+    -webkit-animation: AnimationName 8s ease infinite;
+    -moz-animation: AnimationName 8s ease infinite;
+    animation: AnimationName 8s ease infinite;
     position: absolute;
     border-style: solid;
-    margin: 2%;
-    height: 92%;
+    margin: 3vh 3vw;
+    height: 94vh;
+    width: 94vw;
     z-index: -1;
 }
 
@@ -53,13 +58,15 @@ body {
 }
 
 #main-box {
-    position: relative;
+    grid-column-start: 1;
+    grid-row-start: 2;
+    align-self: start;
+    margin-top: -15%;
+    margin-left: 10%;
     background: linear-gradient(180deg, rgba(0,32,63,0.8) 0%, rgba(0,32,63,0.8) 35%, rgba(0,32,63,0.8) 100%);
     border-style: solid;
-    top: 2%;
-    left: 2%;
     padding: 10px;
-    width: 20%;
+    width: 16vw;
     animation: slideFromLeft .5s ease-in-out .2s;
 }
 
@@ -76,13 +83,13 @@ body {
 }
 
 #about {
-    position: relative;
+    grid-column-start: 4;
+    grid-row-start: 2;
+    margin-left: 15%;
     background: linear-gradient(180deg, rgba(0,32,63,0.8) 0%, rgba(0,32,63,0.8) 35%, rgba(0,32,63,0.8) 100%);
     border-style: solid;
-    left: 52%;
-    top: 0%;
     padding: 10px;
-    width: 20%;
+    width: 18vw;
     animation: slideFromRight .5s ease-in-out .2s;
 }
 
@@ -100,13 +107,14 @@ body {
 }
 
 #projects{
-    position: relative;
+    grid-column-start: 6;
+    grid-row-start: 2;
+    align-self: center;
+    margin-top: -75%;
     background: linear-gradient(180deg, rgba(0,32,63,0.8) 0%, rgba(0,32,63,0.8) 35%, rgba(0,32,63,0.8) 100%);
     border-style: solid;
-    left: 77%;
-    top: -50%;
     padding: 10px;
-    width: 20%;
+    width: 16vw;
     animation: slideFromRight .5s ease-in-out .2s;
 }
 
@@ -130,12 +138,12 @@ body {
 }
 
 #contact {
-    position: relative;
+    grid-column-start: 1;
+    grid-row-start: 3;
+    margin-left: 10%;
     background: linear-gradient(180deg, rgba(0,32,63,0.8) 0%, rgba(0,32,63,0.8) 35%, rgba(0,32,63,0.8) 100%);
     border-style: solid;
-    top: -55%;
-    left: 2%;
-    width: 20%;
+    width: 16vw;
     padding: 10px;
     animation: slideFromLeft .5s ease-in-out .2s;
 }
@@ -166,20 +174,19 @@ body {
 }
 
 #languages {
-    display: relative;
-    position: relative;
-    left: 2%;
-    top: -5%;
-    animation: slideFromLeft .6s ease-in-out .2s;
+    display: flex;
+    grid-column-start: 6;
+    grid-row-start: 4;
+    justify-content: center;
+    animation: slideFromRight .6s ease-in-out .2s;
 }
 
 .alanguage {
-    display: relative;
-    margin-left: .5%;
-    width: 3%;
-    height: 3%
+    margin-left: 2%;
+    width: 3vw;
+    height: 5vh;
 }
 
 #web-dev {
-    width: 9%;
+    width: 9vw;
 }
