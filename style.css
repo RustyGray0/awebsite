@@ -60,7 +60,7 @@ body {
     left: 2%;
     padding: 10px;
     width: 20%;
-    animation: slideFromLeft .5s ease-in .2s;
+    animation: slideFromLeft .5s ease-in-out .2s;
 }
 
 #name {
@@ -83,7 +83,7 @@ body {
     top: 0%;
     padding: 10px;
     width: 20%;
-    animation: slideFromRight .5s ease-in .2s;
+    animation: slideFromRight .5s ease-in-out .2s;
 }
 
 #about-title {
@@ -107,7 +107,7 @@ body {
     top: -50%;
     padding: 10px;
     width: 20%;
-    animation: slideFromRight .5s ease-in .2s;
+    animation: slideFromRight .5s ease-in-out .2s;
 }
 
 #projects-title {
@@ -137,7 +137,7 @@ body {
     left: 2%;
     width: 20%;
     padding: 10px;
-    animation: slideFromLeft .5s ease-in .2s;
+    animation: slideFromLeft .5s ease-in-out .2s;
 }
 
 #contact-title {
@@ -170,7 +170,7 @@ body {
     position: relative;
     left: 2%;
     top: -5%;
-    animation: slideFromLeft .6s ease-in .2s;
+    animation: slideFromLeft .6s ease-in-out .2s;
 }
 
 .alanguage {
