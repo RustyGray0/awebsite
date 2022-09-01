@@ -1,58 +1,66 @@
 body {
-    min-height: 100%;
-    position: relative;
-    scroll-behavior: smooth;
     background-color: #595959;
-    background-image:
-    linear-gradient(rgba(255,255,255,.5) 2px, transparent 2px),
-    linear-gradient(90deg, rgba(255,255,255,.5) 2px, transparent 2px),
-    linear-gradient(rgba(255,255,255,.28) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,255,255,.28) 1px, transparent 1px);
-    background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
-    background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
-    margin: 0;
     font-family: 'Roboto Slab';
     color: #cecece;
+    margin: 0;
 }
 
-nav {
-    position: fixed;
-    width: 100%;
-    background-color: #00203f;/*#3b3b3b*/
-    padding: .01%;
-    z-index: 1;
-    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+@keyframes slideFromLeft {
+    0%{
+        transform: translate(-500px);
+    }
+    100%{
+        transform: translate(0px);
+    }
 }
 
-#nav {
-    text-align: center;
+@keyframes slideFromRight {
+    0%{
+        transform: translate(500px);
+    }
+    100%{
+        transform: translate(0px);
+    }
 }
 
-#nav li {
-    list-style: none;
-    display: inline;
-    margin-left: .5%;
-    margin-right: .5%;
+#container {
+    background: linear-gradient(21deg, #595959, #aeaeae, #7f7f7f);
+    background-size: 600% 600%;
+    -webkit-animation: AnimationName 15s ease infinite;
+    -moz-animation: AnimationName 15s ease infinite;
+    animation: AnimationName 15s ease infinite;
+    position: absolute;
+    border-style: solid;
+    margin: 2%;
+    height: 92%;
+    z-index: -1;
 }
 
-.nav-link {
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 20px;
-    color: #cecece;
+@-webkit-keyframes AnimationName {
+    0%{background-position:72% 0%}
+    50%{background-position:29% 100%}
+    100%{background-position:72% 0%}
 }
-
-.nav-link:hover {
-    color: #00688b;
+@-moz-keyframes AnimationName {
+    0%{background-position:72% 0%}
+    50%{background-position:29% 100%}
+    100%{background-position:72% 0%}
+}
+@keyframes AnimationName {
+    0%{background-position:72% 0%}
+    50%{background-position:29% 100%}
+    100%{background-position:72% 0%}
 }
 
 #main-box {
-    background: linear-gradient(180deg, rgba(0,32,63,0.8) 0%, rgba(0,32,63,0.65) 35%, rgba(0,32,63,0.8) 100%);
+    position: relative;
+    background: linear-gradient(180deg, rgba(0,32,63,0.8) 0%, rgba(0,32,63,0.8) 35%, rgba(0,32,63,0.8) 100%);
     border-style: solid;
-    padding: 5px;
-    position: fixed;
-    margin-top: 5%;
-    margin-left: 1%;
+    top: 2%;
+    left: 2%;
+    padding: 10px;
+    width: 20%;
+    animation: slideFromLeft .5s ease-in .2s;
 }
 
 #name {
@@ -68,14 +76,14 @@ nav {
 }
 
 #about {
-    position: absolute;
-    margin-left: 60%;
-    margin-right: 15%;
-    margin-top: 8%;
-    background: linear-gradient(180deg, rgba(0,32,63,0.8) 0%, rgba(0,32,63,0.65) 35%, rgba(0,32,63,0.8) 100%);
+    position: relative;
+    background: linear-gradient(180deg, rgba(0,32,63,0.8) 0%, rgba(0,32,63,0.8) 35%, rgba(0,32,63,0.8) 100%);
     border-style: solid;
-    padding: 5px;
+    left: 52%;
+    top: 0%;
+    padding: 10px;
     width: 20%;
+    animation: slideFromRight .5s ease-in .2s;
 }
 
 #about-title {
@@ -91,15 +99,45 @@ nav {
     font-size: 20px;
 }
 
-#contact {
-    position: absolute;
-    margin-left: 45%;
-    margin-top: 60%;
-    background: linear-gradient(180deg, rgba(0,32,63,0.8) 0%, rgba(0,32,63,0.65) 35%, rgba(0,32,63,0.8) 100%);
+#projects{
+    position: relative;
+    background: linear-gradient(180deg, rgba(0,32,63,0.8) 0%, rgba(0,32,63,0.8) 35%, rgba(0,32,63,0.8) 100%);
     border-style: solid;
-    padding: 5px;
-    padding-left: 20px;
-    padding-right: 20px;
+    left: 77%;
+    top: -50%;
+    padding: 10px;
+    width: 20%;
+    animation: slideFromRight .5s ease-in .2s;
+}
+
+#projects-title {
+    display: block;
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 10px;
+    border-bottom: solid;
+}
+
+.projects-text {
+    display: block;
+    font-size: 20px;
+    color: #cecece;
+    text-decoration: none;
+}
+
+.projects-text:hover {
+    color: #828282;
+}
+
+#contact {
+    position: relative;
+    background: linear-gradient(180deg, rgba(0,32,63,0.8) 0%, rgba(0,32,63,0.8) 35%, rgba(0,32,63,0.8) 100%);
+    border-style: solid;
+    top: -55%;
+    left: 2%;
+    width: 20%;
+    padding: 10px;
+    animation: slideFromLeft .5s ease-in .2s;
 }
 
 #contact-title {
@@ -125,4 +163,23 @@ nav {
 
 .social:hover {
     color: #00688b;
+}
+
+#languages {
+    display: relative;
+    position: relative;
+    left: 2%;
+    top: -5%;
+    animation: slideFromLeft .6s ease-in .2s;
+}
+
+.alanguage {
+    display: relative;
+    margin-left: .5%;
+    width: 3%;
+    height: 3%
+}
+
+#web-dev {
+    width: 9%;
 }
