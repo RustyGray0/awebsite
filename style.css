@@ -24,6 +24,8 @@ body {
 }
 
 #container {
+    display: flex;
+    flex-direction: column;
     background: linear-gradient(21deg, #595959, #aeaeae, #7f7f7f);
     background-size: 600% 600%;
     -webkit-animation: AnimationName 15s ease infinite;
@@ -53,13 +55,14 @@ body {
 }
 
 #main-box {
-    position: relative;
+    align-self: flex-start;
+    justify-self: flex-start;
     background: linear-gradient(180deg, rgba(0,32,63,0.8) 0%, rgba(0,32,63,0.8) 35%, rgba(0,32,63,0.8) 100%);
     border-style: solid;
-    top: 2%;
-    left: 2%;
+    margin-top: 1%;
+    margin-left: 1%;
     padding: 10px;
-    width: 20%;
+    width: 15%;
     animation: slideFromLeft .5s ease-in-out .2s;
 }
 
@@ -77,10 +80,11 @@ body {
 
 #about {
     position: relative;
+    align-self: flex-end;
+    right: 25%;
+    top: -17%;
     background: linear-gradient(180deg, rgba(0,32,63,0.8) 0%, rgba(0,32,63,0.8) 35%, rgba(0,32,63,0.8) 100%);
     border-style: solid;
-    left: 52%;
-    top: 0%;
     padding: 10px;
     width: 20%;
     animation: slideFromRight .5s ease-in-out .2s;
@@ -100,11 +104,9 @@ body {
 }
 
 #projects{
-    position: relative;
+    align-self: flex-end;
     background: linear-gradient(180deg, rgba(0,32,63,0.8) 0%, rgba(0,32,63,0.8) 35%, rgba(0,32,63,0.8) 100%);
     border-style: solid;
-    left: 77%;
-    top: -50%;
     padding: 10px;
     width: 20%;
     animation: slideFromRight .5s ease-in-out .2s;
@@ -130,11 +132,10 @@ body {
 }
 
 #contact {
-    position: relative;
+    align-self: flex-end;
+    margin-right: auto;
     background: linear-gradient(180deg, rgba(0,32,63,0.8) 0%, rgba(0,32,63,0.8) 35%, rgba(0,32,63,0.8) 100%);
     border-style: solid;
-    top: -55%;
-    left: 2%;
     width: 20%;
     padding: 10px;
     animation: slideFromLeft .5s ease-in-out .2s;
@@ -166,10 +167,9 @@ body {
 }
 
 #languages {
-    display: relative;
+    align-self: flex-end;
+    justify-self: flex-start;
     position: relative;
-    left: 2%;
-    top: -5%;
     animation: slideFromLeft .6s ease-in-out .2s;
 }
 
