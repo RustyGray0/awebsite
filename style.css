@@ -3,6 +3,7 @@ body {
     font-family: 'Roboto Slab';
     color: #cecece;
     margin: 0;
+    display: flex;
 }
 
 @keyframes slideFromLeft {
