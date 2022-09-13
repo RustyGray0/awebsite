@@ -68,7 +68,12 @@ body {
     border-style: solid;
     padding: 10px;
     width: 16vw;
+    box-shadow: 8px 12px 5px #404040;
     animation: slideFromLeft .5s ease-in-out .2s;
+}
+
+#main-box:hover {
+    transform: scale(1.05);
 }
 
 #name {
@@ -92,7 +97,12 @@ body {
     border-style: solid;
     padding: 10px;
     width: 18vw;
+    box-shadow: 8px 12px 5px #404040;
     animation: slideFromRight .5s ease-in-out .2s;
+}
+
+#about:hover {
+    transform: scale(1.05);
 }
 
 #about-title {
@@ -117,7 +127,12 @@ body {
     border-style: solid;
     padding: 10px;
     width: 16vw;
+    box-shadow: 8px 12px 5px #404040;
     animation: slideFromRight .5s ease-in-out .2s;
+}
+
+#projects:hover {
+    transform: scale(1.05);
 }
 
 #projects-title {
@@ -147,7 +162,12 @@ body {
     border-style: solid;
     width: 16vw;
     padding: 10px;
+    box-shadow: 8px 12px 5px #404040;
     animation: slideFromLeft .5s ease-in-out .2s;
+}
+
+#contact:hover {
+    transform: scale(1.05);
 }
 
 #contact-title {
@@ -187,6 +207,10 @@ body {
     margin-left: 2%;
     width: 3vw;
     height: 5vh;
+}
+
+.alanguage:hover {
+    transform: scale(1.1);
 }
 
 #web-dev {
