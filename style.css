@@ -6,7 +6,7 @@ body {
     display: flex;
 }
 
-@keyframes slideFromLeft {
+/* @keyframes slideFromLeft {
     0%{
         transform: translate(-500px);
     }
@@ -22,6 +22,30 @@ body {
     100%{
         transform: translate(0px);
     }
+} */
+
+@keyframes fadeIn {
+    to{
+        opacity: 1;
+    }
+}
+
+#splash{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #595959;
+    z-index: 100;
+    text-align: center;
+    line-height: 90vh;
+}
+
+#splash-text{
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+    font-size: 50px;
 }
 
 #container {
@@ -69,7 +93,7 @@ body {
     padding: 10px;
     width: 16vw;
     box-shadow: 8px 12px 5px #404040;
-    animation: slideFromLeft .5s ease-in-out .2s;
+    /* animation: slideFromLeft .5s ease-in-out .2s; */
 }
 
 #main-box:hover {
@@ -98,7 +122,7 @@ body {
     padding: 10px;
     width: 18vw;
     box-shadow: 8px 12px 5px #404040;
-    animation: slideFromRight .5s ease-in-out .2s;
+    /* animation: slideFromRight .5s ease-in-out .2s; */
 }
 
 #about:hover {
@@ -128,7 +152,7 @@ body {
     padding: 10px;
     width: 16vw;
     box-shadow: 8px 12px 5px #404040;
-    animation: slideFromRight .5s ease-in-out .2s;
+    /* animation: slideFromRight .5s ease-in-out .2s; */
 }
 
 #projects:hover {
@@ -163,7 +187,7 @@ body {
     width: 16vw;
     padding: 10px;
     box-shadow: 8px 12px 5px #404040;
-    animation: slideFromLeft .5s ease-in-out .2s;
+    /* animation: slideFromLeft .5s ease-in-out .2s; */
 }
 
 #contact:hover {
@@ -200,17 +224,13 @@ body {
     grid-column-start: 6;
     grid-row-start: 4;
     justify-content: center;
-    animation: slideFromRight .6s ease-in-out .2s;
+    /* animation: slideFromRight .5s ease-in-out .2s; */
 }
 
 .alanguage {
     margin-left: 2%;
     width: 3vw;
     height: 5vh;
-}
-
-.alanguage:hover {
-    transform: scale(1.1);
 }
 
 #web-dev {
