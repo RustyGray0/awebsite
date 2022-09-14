@@ -30,6 +30,22 @@ body {
     }
 }
 
+@-webkit-keyframes AnimationName {
+    0%{background-position:72% 0%}
+    50%{background-position:29% 100%}
+    100%{background-position:72% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:72% 0%}
+    50%{background-position:29% 100%}
+    100%{background-position:72% 0%}
+}
+@keyframes AnimationName {
+    0%{background-position:72% 0%}
+    50%{background-position:29% 100%}
+    100%{background-position:72% 0%}
+}
+
 #splash{
     position: fixed;
     top: 0;
@@ -44,7 +60,7 @@ body {
 
 #splash-text{
     opacity: 0;
-    animation: fadeIn 1s ease-in forwards;
+    animation: fadeIn .25s ease-in forwards;
     font-size: 50px;
 }
 
@@ -66,21 +82,7 @@ body {
     z-index: -1;
 }
 
-@-webkit-keyframes AnimationName {
-    0%{background-position:72% 0%}
-    50%{background-position:29% 100%}
-    100%{background-position:72% 0%}
-}
-@-moz-keyframes AnimationName {
-    0%{background-position:72% 0%}
-    50%{background-position:29% 100%}
-    100%{background-position:72% 0%}
-}
-@keyframes AnimationName {
-    0%{background-position:72% 0%}
-    50%{background-position:29% 100%}
-    100%{background-position:72% 0%}
-}
+
 
 #main-box {
     grid-column-start: 1;
