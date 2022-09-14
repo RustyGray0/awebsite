@@ -52,7 +52,7 @@ body {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: #595959;
+    background-color: #3b3b3b;
     z-index: 100;
     text-align: center;
     line-height: 90vh;
@@ -62,6 +62,7 @@ body {
     opacity: 0;
     animation: fadeIn .25s ease-in forwards;
     font-size: 50px;
+    font-weight: bold;
 }
 
 #container {
@@ -177,7 +178,7 @@ body {
 }
 
 .projects-text:hover {
-    color: #828282;
+    color: #00688b;
 }
 
 #contact {
