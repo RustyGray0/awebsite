@@ -35,17 +35,17 @@ body {
     }
 }
 
-@-webkit-keyframes AnimationName {
+@-webkit-keyframes animationGradient {
     0%{background-position:72% 0%}
     50%{background-position:29% 100%}
     100%{background-position:72% 0%}
 }
-@-moz-keyframes AnimationName {
+@-moz-keyframes animationGradient {
     0%{background-position:72% 0%}
     50%{background-position:29% 100%}
     100%{background-position:72% 0%}
 }
-@keyframes AnimationName {
+@keyframes animationGradient {
     0%{background-position:72% 0%}
     50%{background-position:29% 100%}
     100%{background-position:72% 0%}
@@ -77,11 +77,12 @@ body {
     grid-gap: 2%;
     background: linear-gradient(21deg, #595959, #aeaeae, #7f7f7f);
     background-size: 600% 600%;
-    -webkit-animation: AnimationName 8s ease infinite;
-    -moz-animation: AnimationName 8s ease infinite;
-    animation: AnimationName 8s ease infinite;
+    -webkit-animation: animationGradient 8s ease infinite;
+    -moz-animation: animationGradient 8s ease infinite;
+    animation: animationGradient 8s ease infinite;
     position: absolute;
     border-style: solid;
+    border-radius: 8px;
     margin: 3vh 3vw;
     height: 94vh;
     width: 94vw;
@@ -98,6 +99,7 @@ body {
     margin-left: 10%;
     background: linear-gradient(180deg, rgba(0,32,63,0.8) 0%, rgba(0,32,63,0.8) 35%, rgba(0,32,63,0.8) 100%);
     border-style: solid;
+    border-radius: 9px;
     padding: 10px;
     width: 16vw;
     box-shadow: 8px 12px 5px #404040;
@@ -127,6 +129,7 @@ body {
     margin-left: 15%;
     background: linear-gradient(180deg, rgba(0,32,63,0.8) 0%, rgba(0,32,63,0.8) 35%, rgba(0,32,63,0.8) 100%);
     border-style: solid;
+    border-radius: 9px;
     padding: 10px;
     width: 18vw;
     box-shadow: 8px 12px 5px #404040;
@@ -157,6 +160,7 @@ body {
     margin-top: -75%;
     background: linear-gradient(180deg, rgba(0,32,63,0.8) 0%, rgba(0,32,63,0.8) 35%, rgba(0,32,63,0.8) 100%);
     border-style: solid;
+    border-radius: 9px;
     padding: 10px;
     width: 16vw;
     box-shadow: 8px 12px 5px #404040;
@@ -192,6 +196,7 @@ body {
     margin-left: 10%;
     background: linear-gradient(180deg, rgba(0,32,63,0.8) 0%, rgba(0,32,63,0.8) 35%, rgba(0,32,63,0.8) 100%);
     border-style: solid;
+    border-radius: 9px;
     width: 16vw;
     padding: 10px;
     box-shadow: 8px 12px 5px #404040;
@@ -213,19 +218,20 @@ body {
 #contact-email {
     display: block;
     text-decoration: none;
-    font-weight: bold;
     font-size: 20px;
+    color: #cecece;
+}
+
+#contact-email:hover {
     color: #00688b;
 }
 
 .social {
-    text-decoration: none;
-    color: #cecece;
+    margin-top: 1%;
+    margin-right: 2%;
+    margin-bottom: -2%;
 }
 
-.social:hover {
-    color: #00688b;
-}
 
 #languages {
     display: flex;
